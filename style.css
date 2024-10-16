@@ -103,6 +103,7 @@ a:hover{
 #video {
     position: relative;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -139,22 +140,20 @@ a:hover{
     width: 100vw;
     margin: auto;
     display: grid;
-    grid-template: 1fr 1fr/1fr 1fr 1fr ;
-    /* display: flex;
-    flex-direction: column; */
+    grid-template-columns: repeat(3, 1fr);
     gap: 5vh;
-
     z-index: 100;
     background-color: black;
-
 }
 
 .service {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 350px;
-    
+    max-width: 350px;
+    /* min-height: 350px; */
+    /* max-height: 500px; */
+ 
     margin: auto;
     /* border: 1px solid rgba(255, 255, 255, 0.295); */
     /* box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.082); */
@@ -194,11 +193,28 @@ letter-spacing: 1.5px;
     gap: 10px;
 }
 
+@media(max-width: 900px){
+
+    #services{
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+}
+
+@media(max-width: 750px){
+
+    #services{
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+}
 
 
+
+/* responsividade main */
+/* ?pensar se diminui video na responsividade */
 
 /* personalizar scroll vertical */
-/* efeito hover fontes e texto */
 
 /* Nosso Diferencial
 Na Agência X , oferecemos soluções completas e personalizadas para cada cliente. Nosso
