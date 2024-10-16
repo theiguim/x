@@ -2,6 +2,20 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #7c7c7c;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #00000056;
+    border-radius: 10px;
+    border: 1px solid #00000056;
+}
 
 body {
 
@@ -176,7 +190,7 @@ letter-spacing: 1.5px;
     text-align: justify;
 }
 
-#footer{
+#contact{
     background-color: black;
     height: 40vh;
     display: flex;
@@ -184,13 +198,23 @@ letter-spacing: 1.5px;
     align-items: center;
 }
 
-#footer>h1{
+#contact>h1{
     font-size: 50px;
 }
 .navFooter{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+#footer{
+    background-color: black;
+    width: 100vw;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+}
+#footer p{
+    margin: auto;
 }
 
 @media(max-width: 900px){
@@ -223,10 +247,6 @@ letter-spacing: 1.5px;
     }
 }
 
-
-
-/* links e scroll suave */
-/* personalizar scroll vertical */
 
 /* Nosso Diferencial
 Na Agência X , oferecemos soluções completas e personalizadas para cada cliente. Nosso
